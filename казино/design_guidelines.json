@@ -1,0 +1,112 @@
+{
+  "theme": "dark",
+  "archetype": "7 (Electric & Neon)",
+  "vibe": "Elite Web3 Casino, High-Energy, Neon Noir",
+  "design_principles": [
+    "Fusion over Imitation: Blend high-end luxury dark themes with Web3 neon crypto accents.",
+    "Mobile-First: Telegram Mini App layout, bottom navigation, thumb-friendly tap targets.",
+    "Contrast & Glow: Deep black backgrounds combined with vibrant glowing accents (Laser Green, Cyber Yellow).",
+    "Texture over Flatness: Use abstract dark textures and noise behind game cards rather than flat gray."
+  ],
+  "colors": {
+    "background": "#050507",
+    "surface": "#0C0C14",
+    "surface_glass": "rgba(12, 12, 20, 0.7)",
+    "primary": "#00FF66",
+    "primary_hover": "#33FF85",
+    "secondary": "#FF007A",
+    "accent_stars": "#FFCC00",
+    "accent_ton": "#0098EA",
+    "border": "rgba(255, 255, 255, 0.08)",
+    "text_primary": "#FFFFFF",
+    "text_secondary": "#8B8E99",
+    "error": "#FF3B30",
+    "success": "#00FF66"
+  },
+  "typography": {
+    "heading_font": "Azeret Mono",
+    "body_font": "Manrope",
+    "scales": {
+      "h1": "text-3xl sm:text-4xl tracking-tighter font-black",
+      "h2": "text-2xl sm:text-3xl tracking-tight font-bold",
+      "h3": "text-xl sm:text-2xl tracking-tight font-semibold",
+      "body": "text-base leading-relaxed",
+      "small": "text-sm text-secondary tracking-wide uppercase font-medium",
+      "balance": "text-4xl sm:text-5xl tracking-tighter font-bold text-primary drop-shadow-[0_0_15px_rgba(0,255,102,0.4)]"
+    }
+  },
+  "layout_and_spacing": {
+    "container": "w-full max-w-md mx-auto min-h-screen bg-background text-white pb-24",
+    "padding": "p-4 sm:p-6",
+    "game_grid": "grid grid-cols-2 gap-4",
+    "surface_strategy": "Crystal Glass: backdrop-blur-xl bg-surface_glass border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.4)]"
+  },
+  "components": {
+    "game_card": {
+      "style": "relative overflow-hidden rounded-2xl bg-surface border border-white/5 transition-transform duration-300 active:scale-95",
+      "internal_layout": "flex flex-col items-center justify-center p-6 aspect-square text-center gap-3",
+      "hover_state": "hover:border-primary/50 hover:shadow-[0_0_20px_rgba(0,255,102,0.15)]",
+      "image_overlay": "absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent z-10"
+    },
+    "bottom_nav": {
+      "style": "fixed bottom-0 left-0 right-0 z-50 flex justify-around items-center h-20 bg-[#050507]/80 backdrop-blur-2xl border-t border-white/10 pb-safe",
+      "icon_style": "flex flex-col items-center gap-1 text-text_secondary hover:text-white transition-colors"
+    },
+    "button_primary": {
+      "style": "w-full py-4 rounded-xl bg-primary text-black font-bold uppercase tracking-widest text-sm hover:bg-primary_hover transition-colors shadow-[0_0_20px_rgba(0,255,102,0.3)]"
+    },
+    "button_secondary": {
+      "style": "w-full py-4 rounded-xl bg-white/10 text-white font-bold uppercase tracking-widest text-sm hover:bg-white/20 transition-colors backdrop-blur-md"
+    },
+    "balance_pill": {
+      "style": "inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-md"
+    }
+  },
+  "media": {
+    "images": [
+      {
+        "id": "telegram_logo",
+        "category": "icons",
+        "url": "https://images.unsplash.com/photo-1678993437662-d6acc3bf4d5d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNTl8MHwxfHNlYXJjaHwyfHx0ZWxlZ3JhbSUyMGxvZ28lMjBibHVlJTIwYmFja2dyb3VuZHxlbnwwfHx8fDE3NzU5MDg0MDd8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Telegram blue background texture for Stars/TON top-up banners"
+      },
+      {
+        "id": "blackjack_bg",
+        "category": "game_backgrounds",
+        "url": "https://images.pexels.com/photos/4253690/pexels-photo-4253690.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Dark playing cards macro for Blackjack game card"
+      },
+      {
+        "id": "roulette_bg",
+        "category": "game_backgrounds",
+        "url": "https://images.unsplash.com/photo-1712425721221-776cba94652f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxNzV8MHwxfHNlYXJjaHw0fHxyb3VsZXR0ZSUyMHdoZWVsJTIwZGFya3xlbnwwfHx8fDE3NzU5MDg0MTR8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Roulette numbers close up for Roulette game card"
+      },
+      {
+        "id": "neon_cyber_bg",
+        "category": "game_backgrounds",
+        "url": "https://images.unsplash.com/photo-1764258560300-2346b28b4e7c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHw0fHxkYXJrJTIwbmVvbiUyMGN5YmVyJTIwYmFja2dyb3VuZHxlbnwwfHx8fDE3NzU5MDg0MTR8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Abstract blue glowing lines for Crash and Bomber game cards"
+      }
+    ],
+    "icons_strategy": "Use lucide-react with high stroke-width (2.5) and add drop shadows to simulate neon glows. For example: filter: drop-shadow(0 0 8px currentColor)."
+  },
+  "interactive_elements": {
+    "animations": {
+      "click": "active:scale-95 transition-transform duration-100",
+      "modal_enter": "animate-in slide-in-from-bottom-full duration-300 ease-out",
+      "number_ticker": "Use framer-motion for counting up balances"
+    },
+    "data_testid_strategy": "ALL interactive elements MUST have role-based data-testid attributes (e.g., data-testid='topup-ton-button', data-testid='game-blackjack-card', data-testid='nav-profile')."
+  },
+  "instructions_to_main_agent": [
+    "Build a Telegram Mini App layout: constrain max-width to mobile size (max-w-md mx-auto) with a fixed bottom navigation bar.",
+    "Implement 6 specific games in the lobby: Blackjack, Roulette, Bomber, Crash, Dice, Slots.",
+    "For game cards, use the provided media background URLs with heavy dark overlays (bg-black/70) and prominent lucide-react icons in the center (e.g., Rocket for Crash, Bomb for Bomber, Dices for Dice).",
+    "Build a 'Top-Up / Deposit' modal using Shadcn Drawer or Dialog. Include options for TON (using #0098EA) and Telegram Stars (using #FFCC00).",
+    "Implement a language switcher (RU/EN) in the Profile section.",
+    "Use Azeret Mono for all headings and balance numbers, and Manrope for UI text.",
+    "Ensure the UI feels like a high-end web3 crypto game: use neon glowing effects via CSS drop-shadows on icons and primary balances, avoiding flat solid colors where possible.",
+    "Use Framer Motion for page transitions and balance number ticker animations."
+  ]
+}
